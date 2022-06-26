@@ -24,14 +24,23 @@ Upon checking the datasets for International Students and World Development Indi
 
 ### Data Preparation/Cleaning
 
-The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis.  As expected, data needs to be cleaned especially as these come from different sources.  In summary, the following were performed:
+The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis.  As expected, data needs to be cleaned especially as these come from different sources.  
+
+
+
+In summary, the following were performed:
 
 * Filtered out data to only include total number of students (excluded numbers separating males and females)
 * Filtered out invalid years as well as outside of 2013-2019 period
 * Rounded down/truncated values as number of students should be specified as whole numbers
 * Converted country codes into actual country names (using ISO 3166 country codes dataset)
 * Remove redundant values regarding Education Level
+* Included Kosovo in processing as Kosovo is not currently recognized by ISO 3166
+* Joined Population data from World Bank dataset into International Students data
 
+After using SQL, 2 output tables have been created.  These tables have been extracted into CSV format:
+1. [International Students' Enrollment 2013-2019](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Student_Enrollment_2013_2019.zip)
+2. [International Students' Enrollment 2013-2019 with Population]((https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Students_Per_Population_2013_2019.csv)
 
 ## Analysis and Results
 ## Conclusions
