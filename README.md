@@ -40,7 +40,7 @@ In summary, the following were performed:
 
 After using SQL, 2 output tables have been created.  These tables have been extracted into CSV format:
 1. [International Students' Enrollment 2013-2019](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Student_Enrollment_2013_2019.zip)
-2. [International Students' Enrollment 2013-2019 with Population]((https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Students_Per_Population_2013_2019.csv)
+2. [International Students' Enrollment 2013-2019 with Population](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Students_Per_Population_2013_2019.csv)
 
 ## Analysis and Results
 ## Conclusions
