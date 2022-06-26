@@ -1,2 +1,12 @@
-# intl-students-2013-2019
-Analyze International Student Enrollment from 2013 to 2019 against World Development Indicators
+# Internation Student Enrollment 2013-2019: Trends and Outlook
+## TLDR
+## Introduction
+### Background
+### Objectives
+## Methodology
+### Resources Used
+### EDA
+## Results and Analysis
+## Conclusions
+
+
