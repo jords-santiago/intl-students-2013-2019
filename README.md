@@ -1,4 +1,4 @@
-# Internation Student Enrollment 2013-2019: Trends and Outlook
+# International Student Enrollment 2013-2019: Trends and Outlook
 ## TLDR
 ## Introduction
 ### Background
@@ -22,7 +22,7 @@ For the World Development Indicators data, this can be found in the World Bank O
 
 Upon checking the datasets for International Students and World Development Indicators, country codes were also given.  These were 2-character (alpha-2) or 3-character (alpha-3) codes for the countries in compliance of [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).  However, the country names themselves don't match between the 2 datasets.  Therefore, a [CSV file](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/03_ISO3166/ISO_3166_COUNTRY_CODES.csv) was created for the ISO 3166 country codes to be able to join the datasets for further analysis.
 
-### Resources Used
+### Data Preparation/Cleaning
 ### EDA
 ## Results and Analysis
 ## Conclusions
