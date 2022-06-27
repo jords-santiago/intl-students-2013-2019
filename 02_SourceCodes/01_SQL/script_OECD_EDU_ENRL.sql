@@ -207,7 +207,7 @@ INTO [IntlEducation_Stats].[dbo].[OECD_EDU_ENRL_2013_2019]
 FROM [IntlEducation_Stats].[dbo].[temp6]
 GROUP BY COUNTRY_OF_SCHOOL,COUNTRY_OF_ORIGIN,[YEAR]
 
--- Table [IntlEducation_Stats].[dbo].[FINAL_OECD_EDU_ENRL_2013_2019] will be exported to a CSV file
+-- Table [IntlEducation_Stats].[dbo].[OECD_EDU_ENRL_2013_2019] will be exported to a CSV file
 -- for further visualization on Tableau
 
 /*
@@ -248,7 +248,7 @@ SELECT
 INTO [IntlEducation_Stats].[dbo].[INTL_STUDENT_ORIGIN_2013_2019]
 FROM [IntlEducation_Stats].[dbo].[temp7]
 GROUP BY COUNTRY_OF_ORIGIN,ORIGIN_COUNTRY_CODE, [YEAR]
--- Table [IntlEducation_Stats].[dbo].[FINAL_INTL_STUDENT_ORIGIN_2013_2019] will be exported to a CSV file
+-- Table [IntlEducation_Stats].[dbo].[INTL_STUDENT_ORIGIN_2013_2019] will be exported to a CSV file
 -- for further analysis using Python
 
 /*
