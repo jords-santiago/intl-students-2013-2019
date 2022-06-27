@@ -31,7 +31,7 @@ On checking the 3 CSV files, the data from the World Bank needed to be arranged 
 The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis:
 
 | No. | CSV file name | Table Name |
-| ----|:-------------:| ----------:|
+| ----|-------------|-----------|
 | 1 | EDU_ENRL_MOBILE-en.csv | \[IntlEducation_Stats].\[dbo].\[RAW_OECD_EDU_ENRL] |
 | 2 | WORLD_BANK_SELECTED_WDI_2013_2019.csv |  \[IntlEducation_Stats].\[dbo].\[WORLD_BANK_SELECTED_WDI_2013_2019] |
 | 3 | ISO_3166_COUNTRY_CODES.csv | \[IntlEducation_Stats].\[dbo].\[ISO_3166_COUNTRY_CODES] | 
