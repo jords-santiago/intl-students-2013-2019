@@ -24,7 +24,11 @@ Upon checking the datasets for International Students and World Development Indi
 
 ### Data Preparation/Cleaning
 
-The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis.  As expected, data needs to be cleaned especially as these come from different sources.  The script/code can be found [here](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/02_SourceCodes/01_SQL/script_OECD_EDU_ENRL.sql).
+The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis:
+
+  
+
+As expected, data needs to be cleaned especially as these come from different sources.  The script/code can be found [here](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/02_SourceCodes/01_SQL/script_OECD_EDU_ENRL.sql).
 
 ![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/Coding_MS_SQL_Server.png "Coding in MS SQL Server")  
 
