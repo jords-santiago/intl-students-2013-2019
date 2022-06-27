@@ -2,13 +2,21 @@
 ## TLDR
 ## Introduction
 ### Background
+
+International Education, especially post-secondary education, has been a popular opinion for quite a while now.  It has been a source of income to countries providing education while giving the international students credentials that can separate them from peers.  However, it seems that there are select countries that attract more of these students to their educational institutions.  On the other hand, there are also some countries that consider international education more than others.
+
 ### Objectives
+
+* Identify the top countries that provide international education and those that opt for studying abroad along with trends related to those.
+* Identify if some specific factors/conditions of a given country relate to the number of international students they have.
+* Predict the amount of international students for a given country given those factors.
+
 ## Methodology
 ### Data Sources
 
-#### International Students
+#### International Student Enrollment
 
-For the International Students data, this can be acquired from the Organisation for Economic Cooperation and Development (OECD) online library.  This has an online Education Statistics database gathered from educational institutions.  The dataset specifically acquired from this library is the [Enrollment of international students by origin](https://stats.oecd.org/viewhtml.aspx?datasetcode=EDU_ENRL_MOBILE&lang=en).  This data mainly contains information from 2013 to 2019.  The [full dataset in CSV format](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/01_OECD/EDU_ENRL_MOBILE-en.csv.zip) was downloaded as shown below.
+For the International Students data, this can be acquired from the Organisation for Economic Cooperation and Development (OECD) online library.  This has an online Education Statistics database gathered from educational institutions.  The dataset specifically acquired from this library is the [Enrollment of international students by origin](https://stats.oecd.org/viewhtml.aspx?datasetcode=EDU_ENRL_MOBILE&lang=en).  This dataset mainly contains international student enrollment for post-secondary education (tertiary level or higher) from 2013 to 2019.  The [full dataset in CSV format](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/01_OECD/EDU_ENRL_MOBILE-en.csv.zip) was downloaded as shown below.
 
 ![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/OECD_data_download.png "Downloading OECD dataset")  
 
