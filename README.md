@@ -24,9 +24,17 @@ Upon checking the datasets for International Students and World Development Indi
 
 ### Data Preparation/Cleaning
 
+On checking the 3 CSV files, the data from the World Bank needed to be arranged where World Development Indicators per year had its own column.  Unpivot was performed using Google Sheets to have the year specified as a row.  The transformed dataset was extracted as a new [CSV file](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/02_WORLD_BANK/WORLD_BANK_SELECTED_WDI_2013_2019.zip) to be loaded with the other 2 datasets.
+
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/World_Bank_WDI_prep.png "Unpivot the World Bank dataset") 
+
 The 3 datasets were imported into Microsoft SQL Server to prepare the data for analysis:
 
-  
+| No. | CSV file name | Table Name |
+| ----|:-------------:| ----------:|
+| 1 | EDU_ENRL_MOBILE-en.csv | \[IntlEducation_Stats].\[dbo].\[RAW_OECD_EDU_ENRL] |
+| 2 | WORLD_BANK_SELECTED_WDI_2013_2019.csv |  \[IntlEducation_Stats].\[dbo].\[WORLD_BANK_SELECTED_WDI_2013_2019] |
+| 3 | ISO_3166_COUNTRY_CODES.csv | \[IntlEducation_Stats].\[dbo].\[ISO_3166_COUNTRY_CODES] | 
 
 As expected, data needs to be cleaned especially as these come from different sources.  The script/code can be found [here](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/02_SourceCodes/01_SQL/script_OECD_EDU_ENRL.sql).
 
