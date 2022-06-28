@@ -16,7 +16,9 @@ International Education, especially post-secondary education, has been a popular
 
 #### International Student Enrollment
 
-For the International Students data, this can be acquired from the Organisation for Economic Cooperation and Development (OECD) online library.  This has an online Education Statistics database gathered from educational institutions.  The dataset specifically acquired from this library is the [Enrollment of international students by origin](https://stats.oecd.org/viewhtml.aspx?datasetcode=EDU_ENRL_MOBILE&lang=en).  This dataset mainly contains international student enrollment for post-secondary education (tertiary level or higher) from 2013 to 2019.  The [full dataset in CSV format](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/01_OECD/EDU_ENRL_MOBILE-en.csv.zip) was downloaded as shown below.
+For the International Students data, this can be acquired from the Organisation for Economic Cooperation and Development (OECD) online library.  This has an online Education Statistics database gathered from educational institutions.  The dataset specifically acquired from this library is the [Enrollment of international students by origin](https://stats.oecd.org/viewhtml.aspx?datasetcode=EDU_ENRL_MOBILE&lang=en).  This dataset mainly contains international student enrollment for post-secondary education (tertiary level or higher).  The dataset mainly has enrollment data from 2013 to 2019 **only for OECD countries**.  OECD does have enrollment data for international students going to non-OECD countries but those were not categorized for a given calendar year.  For the purpose of this project, we can take data on OECD countries as those are where the bulk of international students enroll to.
+
+The [full dataset in CSV format](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/01_OECD/EDU_ENRL_MOBILE-en.csv.zip) was downloaded as shown below.
 
 ![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/OECD_data_download.png "Downloading OECD dataset")  
 
@@ -69,7 +71,7 @@ As expected, data needs to be cleaned especially as these come from different so
 In summary, the following were performed:
 
 * Filtered out data to only include total number of students (excluded numbers separating males and females)
-* Filtered out invalid years as well as outside of 2013-2019 period
+* Filtered out invalid years (9999 was set as a catch-all time period) as well as outside of 2013-2019 period
 * Rounded down/truncated values as number of students should be specified as whole numbers
 * Converted country codes into actual country names (using ISO 3166 country codes dataset)
 * Remove redundant values regarding Education Level
@@ -85,6 +87,21 @@ Using SQL has yielded 3 output tables which have been extracted into CSV format:
 | \[IntlEducation_Stats].\[dbo].\[INTL_STUDENT_ORIGIN_2013_2019] | [Intl_Student_Origin_2013_2019.csv](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSources/02_Cleaned/Intl_Student_Origin_2013_2019.csv) | International Students' Countries of Origin 2013-2019 |
 
 ## Analysis and Results
+
+### Tableau
+
+The "International Students' Enrollment 2013-2019" and "International Students' Enrollment 2013-2019 with Population" dastasets were loaded to **Tableau Public** to create a [dashboard](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/02_SourceCodes/02_Tableau/International_Student_Enrollment_source_OECD.twbx).
+
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/Dashboard_OECD_Enrolled_International_Students.png "OECD Enrolled International Students")  
+
+On the graphic on the distribution of International Students to countries of the school (2019 International Students (by country of school)), it is noticeable that there are multiple countries with no international students.  This is expected as the processed dataset only has data of students enrolling to OECD countries.  Looking at this graphic and the table (Top 10 countries for International Students) beside it, the United States hosts the most international students.  However, taking the enrollment year to year from 2013 to 2019, Australia has been emerging as a top destination catching with the United Kingdom.
+
+On the graphic on the distribution of International Students based on their origin (2019 International Students (by country of origin)), it is showing that China and India is where mostly students come from.  We can infer that international students mostly come from that region but China and India separating themselves from other countries may be due to conditions on their own country.  Taking the table (Top 10 International Students' Countries) beside the graphic, around half of the countries are in Asia.  Also, Kazakhstan has the highest percentage of their population as international students which it is not suprising as it is close to India and China.
+
+### Python/Jupyter Notebook
+
+The "International Students' Countries of Origin 2013-2019" and ["World Bank's Selected World Development Indicators 2013-2019"](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/02_WORLD_BANK/WORLD_BANK_SELECTED_WDI_2013_2019.zip) dastasets were loaded to **Python/Jupyter Notebook** for further analysis and visualization.
+
 ## Conclusions
 
 
