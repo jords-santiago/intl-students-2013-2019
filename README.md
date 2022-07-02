@@ -6,8 +6,6 @@
 * GDP and Population highly correlates to the number of international students 
 * No specific World Development Indicator emerges when international student is normalized against their population (percent of poulation)
 
-Therefore, the gathered World Development Indicators may not have any possible factor to the amount of international students.
-
 ## Introduction
 ### Background
 
