@@ -118,7 +118,7 @@ Using a Linear Regression and Gradient Boosting Regressor, the performance of th
 
 When Total International Students is normalized against the Population of the country, correlation against the other features was not significant.  
 
-![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/correlation_matrix_gdp_pop.png "Correlation for Percent Population") 
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/correlation_matrix_full_percent_pop.png "Correlation for Percent Population") 
 
 Using a Linear Regression and Gradient Boosting Regressor, the performance of the Gradient Boosting Regressor is better than Linear Regression.
 
