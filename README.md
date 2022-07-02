@@ -1,5 +1,13 @@
 # International Student Enrollment 2013-2019: Trends and Outlook
 ## TLDR
+
+* Top countries of school are mostly situated in North America and Europe aside from Australia
+* China and India that have the most international students but don't have the most in terms of percentage of their population
+* GDP and Population highly correlates to the number of international students 
+* No specific World Development Indicator emerges when international student is normalized against their population (percent of poulation)
+
+Therefore, the gathered World Development Indicators may not have any possible factor to the amount of international students.
+
 ## Introduction
 ### Background
 
@@ -102,8 +110,30 @@ On the graphic on the distribution of International Students based on their orig
 
 The "International Students' Countries of Origin 2013-2019" and ["World Bank's Selected World Development Indicators 2013-2019"](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/01_DataSource/01_Raw/02_WORLD_BANK/WORLD_BANK_SELECTED_WDI_2013_2019.zip) dastasets were loaded to **Python/Jupyter Notebook** for further analysis and visualization.
 
+Taking the correlation matrix among the features with International Students, only **GDP and Total Population** showed a significant correlation to it.
+
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/correlation_matrix_full.png "Correlation of all Features")  
+
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/correlation_matrix_gdp_pop.png "Correlation against GDP and Population") 
+
+Using a Linear Regression and Gradient Boosting Regressor, the performance of the models are the same when only GDP and Population are used as compared to using all features.
+
+When Total International Students is normalized against the Population of the country, correlation against the other features was not significant.  
+
+![alt text](https://github.com/jords-santiago/intl-students-2013-2019/blob/main/99_Pictures/correlation_matrix_gdp_pop.png "Correlation for Percent Population") 
+
+Using a Linear Regression and Gradient Boosting Regressor, the performance of the Gradient Boosting Regressor is better than Linear Regression.
+
 ## Conclusions
 
+The top countries providing international education are situated in North America and Europe aside from Australia.  On the other hand, it is China and India that have the most international students among the rest.
+
+The analysis does show GDP and Population may be a factor to the number of international students a country have.  However, if this values was normalized against the population of their respective countries, there is no specific World Development Indicator that emerges to have a relation to it.
+
+Therefore, the gathered World Development Indicators may not have any possible factor to the amount of international students.
+
 ## Recommendations
+
+The datasets gathered had limitations to OECD countries only and it would be better to have a more complete data with regards to international education.  Also, as the World Development Indicators gathered seems not enough to determine the number of international students, gathering more data regarding the countries' conditions may be needed.  Cultural measures may be considered as well as this may closely resemble the decision making of prospective international students in that country.
 
 
